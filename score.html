@@ -11,23 +11,42 @@
     <title>Hello, world!</title>
     <style>
       /* variables */
+#one {
+  margin-left:0%;
+  display:inline-block;
+  width: 5%;
+}
+
+#two {
+  margin-left:25%;
+  display: inline-block;
+  width:5%;
+}
+
+#three {
+  margin-left:25%;
+  display:inline-block;
+  width:5%;
+}
+
+#four {
+  margin-left:25%;
+  display:inline-block;
+  width:5%;
+}
 /* mixins */
 /* elements */
 body {
   font-size: 200%;
   font-family: sans-serif;
-  background: #333;
-  color: #ccc;
-  text-align: center;
 }
 
 ul {
-  max-width: 25em;
+  max-width: 100%;
   margin: auto;
   overflow: hidden;
-  border-radius: 1.7em;
   box-shadow: 0.2em 0 0.5em #222;
-  border: 0.2em solid #ccc;
+  border: 1px solid black;
   padding: 0;
   text-align: center;
 }
@@ -54,22 +73,22 @@ ul li input[type=radio]:checked + label {
 }
 
 /* horizontal orientation */
-@media only screen and (min-width: 530px) {
+@media only screen and (min-width: 30px) {
   ul {
     height: 3em;
-    background: -webkit-linear-gradient(right, #ff6464 0%, #ffff64 50%, #64ff64 100%);
+    background: -webkit-linear-gradient(right, #E83224CC 0%, #ffff64 50%, #36782ACC 100%);
     background: linear-gradient(from right, #ff6464 0%, #ffff64 50%, #64ff64 100%);
   }
   ul li {
     float: left;
-    width: 20%;
+    width: 33%;
   }
   ul li label {
     line-height: 3em;
     background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(220, 220, 220, 0.5) 25%, rgba(30, 30, 30, 0.1) 75%, rgba(0, 0, 0, 0.33) 100%);
     background: linear-gradient(from top, rgba(255, 255, 255, 0) 0%, rgba(220, 220, 220, 0.5) 25%, rgba(30, 30, 30, 0.1) 75%, rgba(0, 0, 0, 0.33) 100%);
-    border-right: 0.2em solid rgba(255, 255, 255, 0.3);
-    border-left: 0.07em solid rgba(100, 100, 100, 0.3);
+    border-right: 1px solid black;
+    border-left: 1px solid black;
   }
   ul li label:hover,
 ul li input[type=radio]:checked + label {
@@ -83,32 +102,6 @@ ul li input[type=radio]:checked + label {
     border-right: none;
   }
 }
-/* verticaly orientation */
-@media only screen and (max-width: 529px) {
-  ul {
-    width: 3em;
-    background: -webkit-linear-gradient(bottom, #ff6464 0%, #ffff64 50%, #64ff64 100%);
-    background: linear-gradient(from bottom, #ff6464 0%, #ffff64 50%, #64ff64 100%);
-  }
-  ul li label {
-    line-height: 3em;
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(220, 220, 220, 0.5) 25%, rgba(30, 30, 30, 0.1) 75%, rgba(0, 0, 0, 0.33) 100%);
-    background: linear-gradient(from left, rgba(255, 255, 255, 0) 0%, rgba(220, 220, 220, 0.5) 25%, rgba(30, 30, 30, 0.1) 75%, rgba(0, 0, 0, 0.33) 100%);
-    border-bottom: 0.2em solid rgba(255, 255, 255, 0.3);
-    border-top: 0.07em solid rgba(100, 100, 100, 0.3);
-  }
-  ul li label:hover,
-ul li input[type=radio]:checked + label {
-    background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0) 0%, rgba(220, 220, 220, 0.5) 25%, rgba(30, 30, 30, 0.1) 75%, rgba(0, 0, 0, 0.33) 100%);
-    background: linear-gradient(from right, rgba(255, 255, 255, 0) 0%, rgba(220, 220, 220, 0.5) 25%, rgba(30, 30, 30, 0.1) 75%, rgba(0, 0, 0, 0.33) 100%);
-  }
-  ul li:first-child label {
-    border-top: none;
-  }
-  ul li:last-child label {
-    border-bottom: none;
-  }
-}
     </style>
   </head>
   <body>
@@ -116,25 +109,35 @@ ul li input[type=radio]:checked + label {
     <ul>
   <li>
     <input id="input0" type="radio" name="input" value="0"/>
-    <label for="input0">0</label>
+    <label for="input0">&nbsp;</label>
   </li>
   <li>
     <input id="input1" type="radio" name="input" value="1"/>
-    <label for="input1">5</label>
+    <label for="input1">&nbsp;</label>
   </li>
   <li>
     <input id="input2" type="radio" name="input" value="2"/>
-    <label for="input2">10</label>
-  </li>
-  <li>
-    <input id="input3" type="radio" name="input" value="3"/>
-    <label for="input3">15</label>
-  </li>
-  <li>
-    <input id="input4" type="radio" name="input" value="4"/>
-    <label for="input4">20</label>
+    <label for="input2">&nbsp;</label>
   </li>
 </ul>
+
+<div class="row">
+  <div id="one">
+    0
+  </div>
+
+  <div id="two">
+    10
+  </div>
+
+    <div id="three">
+    15
+  </div>
+
+    <div id="four">
+    20
+  </div>
+  </div>
 
 
     <!-- Optional JavaScript; choose one of the two! -->
