@@ -1,0 +1,21 @@
+      #pills-tabContent{
+        padding-left: 10px;
+        border: 1px solid lightgray;
+        margin-top: 0px;
+      }
+
+      #pills-tab {
+        padding: 10px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        box-shadow: 5px 2px 2px lightgray;
+        margin-bottom: 0px!important;
+              }
+
+      .container{
+        width:60%;
+      }
+
+      .desc {
+        padding-top: 20px;
+      }
